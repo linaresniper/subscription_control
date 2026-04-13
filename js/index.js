@@ -14,4 +14,7 @@ function accessControl() {
 
     document.getElementById("result").textContent =
         "Access level: " + accessLevel;
+
+    const colors = { blocked: "red", full: "green", limited: "orange" };
+    result.style.color = colors[accessLevel];
 }
